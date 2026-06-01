@@ -614,8 +614,8 @@ h3 {
 }
 
 .brand--footer .brand__mark {
-    width: min(100%, 240px);
-    height: auto;
+    width: 168px;
+    height: 168px;
     flex: 0 0 auto;
     transform: scale(1.25);
     transform-origin: left center;
