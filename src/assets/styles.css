@@ -106,7 +106,8 @@ select {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    transform: translateY(-50%) scale(1.25);
+    transform-origin: left center;
 }
 
 .brand__text {
@@ -616,6 +617,8 @@ h3 {
     width: min(100%, 240px);
     height: auto;
     flex: 0 0 auto;
+    transform: scale(1.25);
+    transform-origin: left center;
 }
 
 .brand--footer .brand__name {
