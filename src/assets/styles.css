@@ -166,14 +166,59 @@ select {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-.hero {
-    min-height: auto;
+.intro {
+    position: relative;
     display: grid;
     align-items: center;
-    padding-top: calc(var(--header-height) + 12px);
-    padding-bottom: 48px;
     border-top: 0;
-    background: var(--color-background);
+    background: var(--color-background) url("img/background.webp") center / cover no-repeat;
+    overflow: hidden;
+    min-height: 100vh;
+    padding-top: calc(var(--header-height) + 86px);
+    padding-bottom: 86px;
+}
+
+.hero {
+    display: grid;
+    align-items: center;
+    min-height: auto;
+    padding-top: 72px;
+    padding-bottom: 48px;
+    color: var(--color-background);
+    background: var(--color-surface);
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(1, 24, 45, 0.9);
+    pointer-events: none;
+}
+
+.intro__content,
+.hero__grid {
+    position: relative;
+    z-index: 1;
+}
+
+.intro__content {
+    display: grid;
+    justify-items: center;
+    max-width: 780px;
+    text-align: center;
+}
+
+.intro__lead {
+    max-width: 640px;
+    margin-bottom: 24px;
+    color: var(--color-text);
+    font-size: 1.18rem;
+}
+
+.intro__actions {
+    display: flex;
+    justify-content: center;
 }
 
 .hero__grid {
@@ -187,10 +232,14 @@ select {
     max-width: 710px;
 }
 
+.hero h2,
+.hero h3 {
+    color: var(--color-background);
+}
+
 .section-kicker {
     margin: 0 0 8px;
     color: var(--color-accent);
-    font-family: "EB Garamond", Georgia, serif;
     font-size: 1.02rem;
     font-weight: 800;
 }
@@ -205,7 +254,6 @@ p {
 h1,
 h2,
 h3 {
-    font-family: "EB Garamond", Georgia, serif;
     line-height: 1.02;
 }
 
@@ -230,7 +278,7 @@ h3 {
 .hero__lead {
     max-width: 640px;
     margin-bottom: 18px;
-    color: var(--color-text);
+    color: var(--color-background);
     font-size: 1.14rem;
 }
 
@@ -285,16 +333,8 @@ h3 {
     justify-self: end;
     width: min(100%, 520px);
     margin: 0;
-    border: 1px solid var(--color-line);
+    border: 1px solid var(--color-line-dark);
     background: transparent;
-}
-
-.hero__photo::before {
-    content: "";
-    position: absolute;
-    inset: 12px -12px -12px 12px;
-    z-index: -1;
-    border: 2px solid var(--color-accent);
 }
 
 .hero__photo img {
@@ -306,19 +346,19 @@ h3 {
 }
 
 .articles {
-    color: var(--color-text);
-    background: var(--color-background);
+    color: var(--color-background);
+    background: var(--color-surface);
 }
 
 .articles h2,
 .articles h3 {
-    color: var(--color-text);
+    color: var(--color-background);
 }
 
 .articles .article-card {
-    color: var(--color-text);
-    border-color: var(--color-line);
-    background: transparent;
+    color: var(--color-background);
+    border-color: var(--color-line-dark);
+    background: var(--color-surface);
 }
 
 .section-heading {
@@ -331,7 +371,7 @@ h3 {
 }
 
 .articles .section-heading p:not(.section-kicker) {
-    color: var(--color-text);
+    color: var(--color-background);
 }
 
 .section-heading--row {
@@ -371,18 +411,22 @@ h3 {
 
 .practice {
     padding-top: 88px;
-    color: var(--color-background);
-    background: var(--color-surface);
+    color: var(--color-text);
+    background: var(--color-background);
 }
 
 .practice h2,
 .practice h3 {
-    color: var(--color-background);
+    color: var(--color-text);
 }
 
 .practice .section-heading p:not(.section-kicker),
 .practice-card p {
-    color: var(--color-background);
+    color: var(--color-text);
+}
+
+.practice-card {
+    border-color: var(--color-line);
 }
 
 .practice-card--empty {
@@ -393,7 +437,8 @@ h3 {
     display: inline-block;
     margin-bottom: 44px;
     color: var(--color-accent);
-    font-family: "EB Garamond", Georgia, serif;
+    font-size: 2rem;
+    line-height: 1;
     font-weight: 800;
 }
 
@@ -436,7 +481,6 @@ h3 {
 .article-card p {
     margin-bottom: 18px;
     color: var(--color-accent);
-    font-family: "EB Garamond", Georgia, serif;
     font-size: 1rem;
     font-weight: 800;
 }
@@ -448,7 +492,7 @@ h3 {
 
 .article-card a {
     width: fit-content;
-    color: var(--color-text);
+    color: var(--color-background);
     font-weight: 800;
     border-bottom: 2px solid currentColor;
     transition: color 180ms ease;
@@ -461,17 +505,17 @@ h3 {
 }
 
 .faq {
-    color: var(--color-background);
-    background: var(--color-surface);
+    color: var(--color-text);
+    background: var(--color-background);
 }
 
 .faq h2,
 .faq h3 {
-    color: var(--color-background);
+    color: var(--color-text);
 }
 
 .faq .section-heading p {
-    color: var(--color-background);
+    color: var(--color-text);
     font-size: 1.08rem;
 }
 
@@ -482,8 +526,8 @@ h3 {
 
 .faq__item {
     padding: 18px 20px;
-    border: 1px solid var(--color-line-dark);
-    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    background: transparent;
 }
 
 .faq__item + .faq__item {
@@ -492,22 +536,22 @@ h3 {
 
 .faq__item h3 {
     margin: 0 0 8px;
-    color: var(--color-background);
+    color: var(--color-text);
     font-size: 1.35rem;
 }
 
 .faq__item p {
     margin: 0;
-    color: var(--color-background);
+    color: var(--color-text);
 }
 
 .booking {
-    color: var(--color-text);
-    background: var(--color-background);
+    color: var(--color-background);
+    background: var(--color-surface);
 }
 
 .booking h2 {
-    color: var(--color-text);
+    color: var(--color-background);
 }
 
 .booking__grid {
@@ -520,7 +564,7 @@ h3 {
 .booking p {
     max-width: 720px;
     margin-bottom: 0;
-    color: var(--color-text);
+    color: var(--color-background);
 }
 
 .booking .section-kicker {
@@ -599,6 +643,7 @@ h3 {
         grid-template-columns: 1fr;
     }
 
+    .intro,
     .hero {
         min-height: auto;
     }
@@ -679,8 +724,13 @@ h3 {
         border-bottom: 1px solid var(--color-line);
     }
 
+    .intro {
+        padding-top: calc(var(--header-height) + 72px);
+        padding-bottom: 72px;
+    }
+
     .hero {
-        padding-top: calc(var(--header-height) + 22px);
+        padding-top: 64px;
         padding-bottom: 28px;
     }
 
@@ -700,18 +750,16 @@ h3 {
         font-size: 1rem;
     }
 
+    .intro__actions,
     .hero__actions {
         align-items: stretch;
         flex-direction: column;
+        width: 100%;
     }
 
     .button,
     .button--large {
         width: 100%;
-    }
-
-    .hero__photo::before {
-        inset: 8px -8px -8px 8px;
     }
 
     .hero__photo img {
