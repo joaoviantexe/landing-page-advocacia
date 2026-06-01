@@ -406,20 +406,6 @@ h3 {
     gap: 24px;
 }
 
-.section-heading--center {
-    max-width: 880px;
-    margin-inline: auto;
-    text-align: center;
-}
-
-.heading-line {
-    display: block;
-    width: 114px;
-    height: 5px;
-    margin: 0 auto 22px;
-    background: var(--color-accent);
-}
-
 .practice__grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -542,7 +528,7 @@ h3 {
 
 .faq__list {
     max-width: 920px;
-    margin: 38px auto 0;
+    margin-top: 38px;
 }
 
 .faq__item {
