@@ -1,6 +1,7 @@
 const body = document.body;
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".site-nav a");
+const faqQuestions = document.querySelectorAll(".faq__question");
 
 if (navToggle) {
     navToggle.addEventListener("click", () => {
@@ -15,6 +16,20 @@ navLinks.forEach((link) => {
         body.classList.remove("nav-open");
         navToggle?.setAttribute("aria-expanded", "false");
         navToggle?.setAttribute("aria-label", "Abrir menu");
+    });
+});
+
+faqQuestions.forEach((question) => {
+    question.addEventListener("click", () => {
+        const answerId = question.getAttribute("aria-controls");
+        const answer = answerId ? document.getElementById(answerId) : null;
+        const isExpanded = question.getAttribute("aria-expanded") === "true";
+
+        question.setAttribute("aria-expanded", String(!isExpanded));
+
+        if (answer) {
+            answer.hidden = isExpanded;
+        }
     });
 });
 

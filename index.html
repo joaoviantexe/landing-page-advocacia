@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descrição em produção.">
+    <meta name="description" content="Advocacia criminal com atuação em Direito Penal Econômico, Habeas Corpus, Compliance Criminal e defesa técnica em todo o Brasil.">
     <title>Advogado Renan Silva Lima</title>
     <link rel="icon" type="image/svg+xml" sizes="any" href="src/assets/img/logo.svg?v=4">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,11 +25,28 @@
         </button>
 
         <nav class="site-nav" id="site-menu" aria-label="Navegação principal">
-            <a href="#inicio">Início</a>
-            <a href="#advogado">Advogado</a>
+            <div class="nav-group">
+                <a href="#inicio">Início</a>
+                <div class="nav-submenu" aria-label="Submenu de Início">
+                    <a href="#apresentacao">Apresentação</a>
+                </div>
+            </div>
             <a href="#atuacao">Atuação</a>
+            <div class="nav-group">
+                <a href="#atendimento">Atendimento</a>
+                <div class="nav-submenu" aria-label="Submenu de Atendimento">
+                    <a href="#avaliacoes">Avaliações</a>
+                </div>
+            </div>
+            <a href="#advogado">Advogado</a>
             <a href="#artigos">Artigos</a>
-            <a href="#duvidas">Dúvidas</a>
+            <div class="nav-group">
+                <button class="nav-trigger" type="button">Mais</button>
+                <div class="nav-submenu" aria-label="Mais páginas">
+                    <a href="#localizacao">Localização</a>
+                    <a href="#duvidas">Dúvidas</a>
+                </div>
+            </div>
             <a href="#agendamento">Agendamento</a>
         </nav>
     </header>
@@ -37,9 +54,9 @@
     <main>
         <section class="intro section" id="inicio" aria-labelledby="intro-title">
             <div class="container intro__content">
-                <h1 id="intro-title">Título em produção</h1>
+                <h1 id="intro-title">Advocacia criminal especializada</h1>
                 <p class="intro__lead">
-                    Descrição em produção
+                    Atuação técnica e estratégica em Direito Penal Econômico, Habeas Corpus e Tribunal do Júri, com foco na proteção da liberdade e dos direitos fundamentais.
                 </p>
                 <div class="intro__actions">
                     <a class="button button--primary" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20Renan%20Silva%20Lima." target="_blank" rel="noopener noreferrer">
@@ -52,18 +69,21 @@
             </div>
         </section>
 
-        <section class="hero section" id="advogado" aria-labelledby="lawyer-title">
-            <div class="container hero__grid">
-                <div class="hero__content">
-                    <p class="section-kicker">Advogado</p>
-                    <h2 id="lawyer-title">Renan Silva Lima</h2>
-                    <p class="hero__lead">
-                        Biografia do advogado em produção
+        <section class="section presentation" id="apresentacao" aria-labelledby="presentation-title">
+            <div class="container presentation__grid">
+                <div class="presentation__content">
+                    <p class="section-kicker">Apresentação</p>
+                    <h2 id="presentation-title">Atuação penal com técnica, estratégia e discrição</h2>
+                    <p>
+                        A advocacia criminal exige leitura cuidadosa dos fatos, domínio do processo penal e atuação responsável desde os primeiros atos da investigação.
+                    </p>
+                    <p>
+                        O atendimento é voltado à construção de estratégias jurídicas compatíveis com a realidade de cada caso, com comunicação direta, sigilo profissional e atenção à proteção da liberdade.
                     </p>
                 </div>
 
-                <figure class="hero__photo">
-                    <img src="src/assets/img/renan-lima.webp" alt="Retrato do advogado Renan Silva Lima" width="930" height="1240" decoding="async" fetchpriority="high">
+                <figure class="presentation__media">
+                    <img src="src/assets/img/apresentacao.webp" alt="Ambiente de atendimento jurídico" loading="lazy" decoding="async">
                 </figure>
             </div>
         </section>
@@ -74,24 +94,117 @@
                     <p class="section-kicker">Atuação</p>
                     <h2 id="practice-title">Suportes jurídicos especializados</h2>
                     <p>
-                        Descrição em produção
+                        Se você enfrenta uma acusação criminal ou precisa de orientação em Direito Penal, conte com suporte jurídico especializado para proteger seus direitos em cada etapa do caso.
                     </p>
                 </div>
 
                 <div class="practice__grid">
                     <article class="practice-card">
                         <span>01</span>
-                        <h3>Habeas Corpus</h3>
-                        <p>Descrição em produção</p>
+                        <h3>Direito Penal Econômico</h3>
+                        <p>Defesa em investigações e processos envolvendo crimes empresariais, financeiros, tributários e patrimoniais.</p>
                     </article>
                     <article class="practice-card">
                         <span>02</span>
-                        <h3>Defesa Criminal</h3>
-                        <p>Descrição em produção</p>
+                        <h3>Recursos Criminais</h3>
+                        <p>Elaboração e acompanhamento de recursos perante tribunais estaduais, federais e superiores.</p>
                     </article>
-                    <div class="practice-card practice-card--empty" aria-hidden="true"></div>
-                    <div class="practice-card practice-card--empty" aria-hidden="true"></div>
+                    <article class="practice-card">
+                        <span>03</span>
+                        <h3>Habeas Corpus</h3>
+                        <p>Medida voltada à proteção da liberdade diante de prisão ilegal, ameaça de constrangimento ou urgências no processo penal.</p>
+                    </article>
+                    <article class="practice-card">
+                        <span>04</span>
+                        <h3>Tribunal do Júri</h3>
+                        <p>Defesa técnica em crimes dolosos contra a vida, da investigação ao plenário de julgamento.</p>
+                    </article>
+                    <article class="practice-card">
+                        <span>05</span>
+                        <h3>Investigações Corporativas</h3>
+                        <p>Acompanhamento de apurações internas e análise de riscos criminais em ambientes empresariais.</p>
+                    </article>
+                    <article class="practice-card">
+                        <span>06</span>
+                        <h3>Flagrante e Liberdade</h3>
+                        <p>Atuação imediata em prisões em flagrante, pedidos de liberdade provisória e medidas cautelares.</p>
+                    </article>
                 </div>
+            </div>
+        </section>
+
+        <section class="section service" id="atendimento" aria-labelledby="service-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Atendimento</p>
+                    <h2 id="service-title">Como funciona o atendimento</h2>
+                    <p>
+                        O atendimento segue um processo estruturado e transparente, pensado para conduzir a demanda com eficiência, responsabilidade e proteção dos direitos criminais envolvidos.
+                    </p>
+                </div>
+
+                <div class="service__grid">
+                    <article class="service-card">
+                        <span>01</span>
+                        <h3>Consulta</h3>
+                        <p>Inicialmente, é realizada uma consulta para compreensão dos fatos, documentos disponíveis e detalhes relevantes do caso.</p>
+                    </article>
+                    <article class="service-card">
+                        <span>02</span>
+                        <h3>Definição de estratégia</h3>
+                        <p>Após a exposição dos fatos, são avaliados os riscos, medidas cabíveis e a estratégia mais adequada para a defesa.</p>
+                    </article>
+                    <article class="service-card">
+                        <span>03</span>
+                        <h3>Tomada de ação</h3>
+                        <p>Com a estratégia definida, são adotadas as providências jurídicas necessárias para a defesa dos interesses do cliente.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reviews" id="avaliacoes" aria-labelledby="reviews-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Avaliações</p>
+                    <h2 id="reviews-title">O que dizem nossos clientes</h2>
+                    <p>
+                        Cada depoimento reflete o compromisso em oferecer um atendimento humano, especializado e atento às necessidades de cada caso.
+                    </p>
+                </div>
+
+                <div class="reviews__widget" aria-label="Avaliações do Google">
+                    <div class="reviews__grid">
+                        <article class="review-card">
+                            <div class="review-card__meta">
+                                <span>João Viana Teixeira</span>
+                                <strong>★★★★★</strong>
+                            </div>
+                            <p>Atendimento excelente, com orientação clara, postura profissional e atenção aos detalhes do caso. Recomendo pelo cuidado e pela seriedade na condução.</p>
+                        </article>
+                        <article class="review-card review-card--empty" aria-hidden="true"></article>
+                        <article class="review-card review-card--empty" aria-hidden="true"></article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero section" id="advogado" aria-labelledby="lawyer-title">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <p class="section-kicker">Advogado</p>
+                    <h2 id="lawyer-title">Renan Silva Lima</h2>
+                    <p class="hero__lead">
+                        Dr. Renan Lima OAB/PA 39.973, pós-graduando em Direito Penal e Processo Penal pelo Instituto de Direito Brasileiro (IDP). Tem como principal ramo de atuação o Direito Penal Econômico, Habeas Corpus e Compliance Criminal.
+                    </p>
+                    <p class="hero__lead">
+                        Com ampla experiência em escritórios de advocacia em Belém/PA, oferece defesa técnica, estratégica e focada na proteção da liberdade e direitos fundamentais. Atuação em todo o Brasil, com sede em Belém/PA.
+                    </p>
+                </div>
+
+                <figure class="hero__photo">
+                    <img src="src/assets/img/renan-lima.webp" alt="Retrato do advogado Renan Silva Lima" width="930" height="1240" decoding="async" loading="lazy">
+                </figure>
             </div>
         </section>
 
@@ -120,32 +233,151 @@
             </div>
         </section>
 
+        <section class="section location" id="localizacao" aria-labelledby="location-title">
+            <div class="container location__grid">
+                <div>
+                    <p class="section-kicker">Localização</p>
+                    <h2 id="location-title">Atendimento em Belém/PA</h2>
+                    <p>
+                        Avenida Nazaré, 532, sala 407, edifício Royal Trade Center, Belém/PA.
+                    </p>
+                    <div class="location__hours">
+                        <h3>Atendimento 24 horas</h3>
+                        <p>Segunda a sábado, das 8h às 18h, ou 24 horas em casos urgentes.</p>
+                    </div>
+                </div>
+
+                <div class="location__map">
+                    <iframe
+                        title="Mapa da localização do escritório"
+                        src="https://www.google.com/maps?q=Avenida%20Nazar%C3%A9%2C%20532%2C%20sala%20407%2C%20edif%C3%ADcio%20Royal%20Trade%20Center%2C%20Bel%C3%A9m%2C%20PA&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
         <section class="section faq" id="duvidas" aria-labelledby="faq-title">
             <div class="container">
                 <div class="section-heading">
                     <p class="section-kicker">Dúvidas</p>
                     <h2 id="faq-title">Perguntas Frequentes</h2>
                     <p>
-                        Descrição em produção
+                        Tire suas principais dúvidas sobre atendimento, atuação e primeiros passos em casos criminais. Clique nas perguntas abaixo para ver respostas objetivas.
                     </p>
                 </div>
 
                 <div class="faq__list">
                     <article class="faq__item">
-                        <h3>Título da pergunta em produção</h3>
-                        <p>Descrição em produção</p>
+                        <h3>
+                            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
+                                <span>Quando devo procurar um advogado criminalista?</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" hidden>
+                            <p>A orientação deve ser buscada assim que houver intimação, investigação, prisão, busca e apreensão ou qualquer risco de responsabilização penal.</p>
+                        </div>
                     </article>
                     <article class="faq__item">
-                        <h3>Título da pergunta em produção</h3>
-                        <p>Descrição em produção</p>
+                        <h3>
+                            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
+                                <span>O atendimento pode ser realizado fora de Belém/PA?</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" hidden>
+                            <p>Sim. A atuação ocorre em todo o Brasil, com atendimento presencial em Belém/PA e acompanhamento remoto conforme a necessidade do caso.</p>
+                        </div>
                     </article>
                     <article class="faq__item">
-                        <h3>Título da pergunta em produção</h3>
-                        <p>Descrição em produção</p>
+                        <h3>
+                            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
+                                <span>O que fazer em caso de prisão em flagrante?</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" hidden>
+                            <p>Nessas situações, a atuação rápida é essencial para avaliar a legalidade da prisão, formular pedidos cabíveis e acompanhar os primeiros atos.</p>
+                        </div>
                     </article>
                     <article class="faq__item">
-                        <h3>Título da pergunta em produção</h3>
-                        <p>Descrição em produção</p>
+                        <h3>
+                            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
+                                <span>Como funciona a primeira consulta?</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" hidden>
+                            <p>A conversa inicial permite compreender os fatos, avaliar documentos disponíveis e indicar caminhos jurídicos possíveis com responsabilidade e sigilo profissional.</p>
+                        </div>
+                    </article>
+                    <article class="faq__item">
+                        <h3>
+                            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">
+                                <span>Recebi uma intimação. Preciso comparecer sozinho?</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" hidden>
+                            <p>Antes de qualquer comparecimento, é recomendável buscar orientação para compreender o motivo da intimação e os cuidados necessários no depoimento.</p>
+                        </div>
+                    </article>
+                    <article class="faq__item">
+                        <h3>
+                            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">
+                                <span>Posso responder a uma investigação em liberdade?</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6" hidden>
+                            <p>Sim. Muitas apurações tramitam com o investigado em liberdade, mas o acompanhamento técnico desde o início ajuda a evitar prejuízos à defesa.</p>
+                        </div>
+                    </article>
+                    <article class="faq__item">
+                        <h3>
+                            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-7" id="faq-question-7">
+                                <span>O que é habeas corpus?</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7" hidden>
+                            <p>É uma medida constitucional utilizada para proteger a liberdade de locomoção quando há ilegalidade, abuso ou ameaça concreta de constrangimento.</p>
+                        </div>
+                    </article>
+                    <article class="faq__item">
+                        <h3>
+                            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-8" id="faq-question-8">
+                                <span>A defesa atua em crimes empresariais?</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8" hidden>
+                            <p>Sim. A atuação abrange Direito Penal Econômico, investigações corporativas, compliance criminal e processos relacionados à atividade empresarial.</p>
+                        </div>
+                    </article>
+                    <article class="faq__item">
+                        <h3>
+                            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-9" id="faq-question-9">
+                                <span>Como são definidos os honorários?</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-answer-9" role="region" aria-labelledby="faq-question-9" hidden>
+                            <p>Os honorários são definidos após a análise da complexidade, urgência, fase processual e atos necessários para a condução do caso.</p>
+                        </div>
+                    </article>
+                    <article class="faq__item">
+                        <h3>
+                            <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-10" id="faq-question-10">
+                                <span>As informações do atendimento são sigilosas?</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq__answer" id="faq-answer-10" role="region" aria-labelledby="faq-question-10" hidden>
+                            <p>Sim. As informações compartilhadas durante o atendimento são tratadas com sigilo profissional, conforme as normas da advocacia.</p>
+                        </div>
                     </article>
                 </div>
             </div>
