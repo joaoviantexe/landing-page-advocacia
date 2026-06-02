@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Investigações Corporativas">
+  <rect x="14" y="18" width="34" height="48" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <path d="M24 30h6M36 30h6M24 40h6M36 40h6M24 50h6M36 50h6M31 66V56" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="55" cy="50" r="11" fill="none" stroke="#F05400" stroke-width="3"/>
+  <path d="M63 58l10 10" fill="none" stroke="#F05400" stroke-width="3" stroke-linecap="square"/>
+</svg>

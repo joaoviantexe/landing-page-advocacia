@@ -1,39 +1,53 @@
 const body = document.body;
 const navToggle = document.querySelector(".nav-toggle");
-const navLinks = document.querySelectorAll(".site-nav a");
-const faqQuestions = document.querySelectorAll(".faq__question");
-
-if (navToggle) {
-    navToggle.addEventListener("click", () => {
-        const isOpen = body.classList.toggle("nav-open");
-        navToggle.setAttribute("aria-expanded", String(isOpen));
-        navToggle.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
-    });
-}
-
-navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-        body.classList.remove("nav-open");
-        navToggle?.setAttribute("aria-expanded", "false");
-        navToggle?.setAttribute("aria-label", "Abrir menu");
-    });
-});
-
-faqQuestions.forEach((question) => {
-    question.addEventListener("click", () => {
-        const answerId = question.getAttribute("aria-controls");
-        const answer = answerId ? document.getElementById(answerId) : null;
-        const isExpanded = question.getAttribute("aria-expanded") === "true";
-
-        question.setAttribute("aria-expanded", String(!isExpanded));
-
-        if (answer) {
-            answer.hidden = isExpanded;
-        }
-    });
-});
-
+const siteNav = document.querySelector(".site-nav");
+const navLinks = [...document.querySelectorAll(".site-nav a")];
+const faqList = document.querySelector(".faq__list");
 const sections = [...document.querySelectorAll("main section[id]")];
+
+const setMenuState = (isOpen) => {
+    body.classList.toggle("nav-open", isOpen);
+    navToggle?.setAttribute("aria-expanded", String(isOpen));
+    navToggle?.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
+};
+
+const closeMenu = () => setMenuState(false);
+
+const toggleFaqAnswer = (question) => {
+    const answerId = question.getAttribute("aria-controls");
+    const answer = answerId ? document.getElementById(answerId) : null;
+    const isExpanded = question.getAttribute("aria-expanded") === "true";
+
+    question.setAttribute("aria-expanded", String(!isExpanded));
+
+    if (answer) {
+        answer.hidden = isExpanded;
+    }
+};
+
+const activateNavLink = (sectionId) => {
+    navLinks.forEach((link) => {
+        link.classList.toggle("is-active", link.getAttribute("href") === `#${sectionId}`);
+    });
+};
+
+navToggle?.addEventListener("click", () => {
+    setMenuState(!body.classList.contains("nav-open"));
+});
+
+siteNav?.addEventListener("click", (event) => {
+    if (event.target.closest("a")) {
+        closeMenu();
+    }
+});
+
+faqList?.addEventListener("click", (event) => {
+    const question = event.target.closest(".faq__question");
+
+    if (question) {
+        toggleFaqAnswer(question);
+    }
+});
 
 if ("IntersectionObserver" in window && sections.length) {
     const observer = new IntersectionObserver((entries) => {
@@ -42,9 +56,7 @@ if ("IntersectionObserver" in window && sections.length) {
                 return;
             }
 
-            navLinks.forEach((link) => {
-                link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
-            });
+            activateNavLink(entry.target.id);
         });
     }, {
         rootMargin: "-45% 0px -45% 0px",

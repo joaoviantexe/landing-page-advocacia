@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Tribunal do Júri">
+  <path d="M14 62h52M20 54h40M24 30h32v24H24z" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <path d="M18 30l22-14 22 14" fill="none" stroke="#F05400" stroke-width="3" stroke-linejoin="miter"/>
+  <path d="M31 54V34M40 54V34M49 54V34" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <path d="M56 17l8-8M61 22l8-8M56 17l5 5" fill="none" stroke="#F05400" stroke-width="3" stroke-linecap="square"/>
+</svg>

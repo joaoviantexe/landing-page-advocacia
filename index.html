@@ -6,15 +6,22 @@
     <meta name="description" content="Advocacia criminal com atuação em Direito Penal Econômico, Habeas Corpus, Compliance Criminal e defesa técnica em todo o Brasil.">
     <title>Advogado Renan Silva Lima</title>
     <link rel="icon" type="image/svg+xml" sizes="any" href="src/assets/img/logo.svg?v=4">
+    <link rel="preload" as="image" href="src/assets/img/background.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/assets/styles.css">
 </head>
 <body>
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+        <symbol id="icon-whatsapp" viewBox="0 0 32 32">
+            <path d="M16.03 3.5A12.35 12.35 0 0 0 5.56 22.4L4 28.5l6.25-1.5A12.34 12.34 0 1 0 16.03 3.5Zm0 2.25a10.09 10.09 0 0 1 8.58 15.38 10.1 10.1 0 0 1-13.71 3.61l-.4-.24-3.28.79.82-3.18-.26-.42A10.1 10.1 0 0 1 16.03 5.75Zm-4.35 4.72c-.22 0-.58.08-.88.41-.3.34-1.15 1.12-1.15 2.73s1.18 3.17 1.34 3.38c.16.22 2.28 3.65 5.64 4.97 2.8 1.1 3.37.88 3.98.82.61-.06 1.97-.8 2.25-1.58.28-.78.28-1.45.2-1.59-.08-.14-.3-.22-.64-.39-.33-.17-1.97-.97-2.28-1.08-.3-.11-.52-.17-.75.17-.22.33-.86 1.08-1.05 1.3-.19.22-.39.25-.72.08-.33-.17-1.4-.52-2.67-1.65-.99-.88-1.65-1.97-1.84-2.31-.19-.33-.02-.51.14-.68.14-.14.33-.39.5-.58.16-.19.22-.33.33-.55.11-.22.06-.42-.03-.58-.08-.17-.75-1.8-1.03-2.47-.27-.65-.54-.56-.75-.57h-.64Z"/>
+        </symbol>
+    </svg>
+
     <header class="site-header">
         <a class="brand" href="#inicio" aria-label="Renan Lima Advocacia - Início">
-            <img class="brand__mark" src="src/assets/img/logo.webp" alt="Renan Lima - Advogado">
+            <img class="brand__mark" src="src/assets/img/logotipo.svg?v=2" alt="Renan Lima - Advogado" width="168" height="45">
             <span class="visually-hidden">Renan Lima - Advogado</span>
         </a>
 
@@ -61,7 +68,7 @@
                 <div class="intro__actions">
                     <a class="button button--primary" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20Renan%20Silva%20Lima." target="_blank" rel="noopener noreferrer">
                         <svg class="button__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-                            <path d="M16.03 3.5A12.35 12.35 0 0 0 5.56 22.4L4 28.5l6.25-1.5A12.34 12.34 0 1 0 16.03 3.5Zm0 2.25a10.09 10.09 0 0 1 8.58 15.38 10.1 10.1 0 0 1-13.71 3.61l-.4-.24-3.28.79.82-3.18-.26-.42A10.1 10.1 0 0 1 16.03 5.75Zm-4.35 4.72c-.22 0-.58.08-.88.41-.3.34-1.15 1.12-1.15 2.73s1.18 3.17 1.34 3.38c.16.22 2.28 3.65 5.64 4.97 2.8 1.1 3.37.88 3.98.82.61-.06 1.97-.8 2.25-1.58.28-.78.28-1.45.2-1.59-.08-.14-.3-.22-.64-.39-.33-.17-1.97-.97-2.28-1.08-.3-.11-.52-.17-.75.17-.22.33-.86 1.08-1.05 1.3-.19.22-.39.25-.72.08-.33-.17-1.4-.52-2.67-1.65-.99-.88-1.65-1.97-1.84-2.31-.19-.33-.02-.51.14-.68.14-.14.33-.39.5-.58.16-.19.22-.33.33-.55.11-.22.06-.42-.03-.58-.08-.17-.75-1.8-1.03-2.47-.27-.65-.54-.56-.75-.57h-.64Z"/>
+                            <use href="#icon-whatsapp"></use>
                         </svg>
                         Agendar Consulta
                     </a>
@@ -83,7 +90,7 @@
                 </div>
 
                 <figure class="presentation__media">
-                    <img src="src/assets/img/apresentacao.webp" alt="Ambiente de atendimento jurídico" loading="lazy" decoding="async">
+                    <img src="src/assets/img/apresentacao.webp" alt="Ambiente de atendimento jurídico" width="1080" height="1080" loading="lazy" decoding="async">
                 </figure>
             </div>
         </section>
@@ -100,32 +107,32 @@
 
                 <div class="practice__grid">
                     <article class="practice-card">
-                        <span>01</span>
+                        <img class="practice-card__icon" src="src/assets/img/atuacao-penal-economico.svg" alt="" width="54" height="54" aria-hidden="true" loading="lazy" decoding="async">
                         <h3>Direito Penal Econômico</h3>
                         <p>Defesa em investigações e processos envolvendo crimes empresariais, financeiros, tributários e patrimoniais.</p>
                     </article>
                     <article class="practice-card">
-                        <span>02</span>
+                        <img class="practice-card__icon" src="src/assets/img/recursos-criminais.svg" alt="" width="54" height="54" aria-hidden="true" loading="lazy" decoding="async">
                         <h3>Recursos Criminais</h3>
                         <p>Elaboração e acompanhamento de recursos perante tribunais estaduais, federais e superiores.</p>
                     </article>
                     <article class="practice-card">
-                        <span>03</span>
+                        <img class="practice-card__icon" src="src/assets/img/habeas-corpus.svg" alt="" width="54" height="54" aria-hidden="true" loading="lazy" decoding="async">
                         <h3>Habeas Corpus</h3>
                         <p>Medida voltada à proteção da liberdade diante de prisão ilegal, ameaça de constrangimento ou urgências no processo penal.</p>
                     </article>
                     <article class="practice-card">
-                        <span>04</span>
+                        <img class="practice-card__icon" src="src/assets/img/tribunal-juri.svg" alt="" width="54" height="54" aria-hidden="true" loading="lazy" decoding="async">
                         <h3>Tribunal do Júri</h3>
                         <p>Defesa técnica em crimes dolosos contra a vida, da investigação ao plenário de julgamento.</p>
                     </article>
                     <article class="practice-card">
-                        <span>05</span>
+                        <img class="practice-card__icon" src="src/assets/img/investigacoes-corporativas.svg" alt="" width="54" height="54" aria-hidden="true" loading="lazy" decoding="async">
                         <h3>Investigações Corporativas</h3>
                         <p>Acompanhamento de apurações internas e análise de riscos criminais em ambientes empresariais.</p>
                     </article>
                     <article class="practice-card">
-                        <span>06</span>
+                        <img class="practice-card__icon" src="src/assets/img/flagrante-liberdade.svg" alt="" width="54" height="54" aria-hidden="true" loading="lazy" decoding="async">
                         <h3>Flagrante e Liberdade</h3>
                         <p>Atuação imediata em prisões em flagrante, pedidos de liberdade provisória e medidas cautelares.</p>
                     </article>
@@ -139,7 +146,7 @@
                     <p class="section-kicker">Atendimento</p>
                     <h2 id="service-title">Como funciona o atendimento</h2>
                     <p>
-                        O atendimento segue um processo estruturado e transparente, pensado para conduzir a demanda com eficiência, responsabilidade e proteção dos direitos criminais envolvidos.
+                        Cada etapa é conduzida com escuta qualificada, avaliação dos riscos e definição de medidas compatíveis com a urgência e a complexidade da demanda criminal.
                     </p>
                 </div>
 
@@ -173,18 +180,37 @@
                     </p>
                 </div>
 
-                <div class="reviews__widget" aria-label="Avaliações do Google">
-                    <div class="reviews__grid">
-                        <article class="review-card">
+                <div class="reviews__grid">
+                    <article class="review-card">
+                        <div class="review-card__author">
+                            <img class="review-card__image" src="src/assets/img/avaliacao01.webp" alt="Foto de João Viana Teixeira" width="68" height="68" loading="lazy" decoding="async">
                             <div class="review-card__meta">
                                 <span>João Viana Teixeira</span>
                                 <strong>★★★★★</strong>
                             </div>
-                            <p>Atendimento excelente, com orientação clara, postura profissional e atenção aos detalhes do caso. Recomendo pelo cuidado e pela seriedade na condução.</p>
-                        </article>
-                        <article class="review-card review-card--empty" aria-hidden="true"></article>
-                        <article class="review-card review-card--empty" aria-hidden="true"></article>
-                    </div>
+                        </div>
+                        <p>Atendimento excelente, com orientação clara, postura profissional e atenção aos detalhes do caso. Recomendo pelo cuidado e pela seriedade na condução.</p>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-card__author">
+                            <img class="review-card__image" src="src/assets/img/avatar-generico.svg" alt="Avatar genérico de Mariana Costa" width="68" height="68" loading="lazy" decoding="async">
+                            <div class="review-card__meta">
+                                <span>Mariana Costa</span>
+                                <strong>★★★★★</strong>
+                            </div>
+                        </div>
+                        <p>Recebi um atendimento muito claro e cuidadoso desde o primeiro contato. A condução foi técnica, objetiva e transmitiu segurança em um momento delicado.</p>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-card__author">
+                            <img class="review-card__image" src="src/assets/img/avatar-generico.svg" alt="Avatar genérico de Carlos Henrique" width="68" height="68" loading="lazy" decoding="async">
+                            <div class="review-card__meta">
+                                <span>Carlos Henrique</span>
+                                <strong>★★★★★</strong>
+                            </div>
+                        </div>
+                        <p>Profissional sério, atento aos detalhes e comprometido com a melhor estratégia para o caso. As orientações foram diretas e bem fundamentadas.</p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -251,6 +277,8 @@
                     <iframe
                         title="Mapa da localização do escritório"
                         src="https://www.google.com/maps?q=Avenida%20Nazar%C3%A9%2C%20532%2C%20sala%20407%2C%20edif%C3%ADcio%20Royal%20Trade%20Center%2C%20Bel%C3%A9m%2C%20PA&output=embed"
+                        width="640"
+                        height="360"
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
@@ -264,7 +292,7 @@
                     <p class="section-kicker">Dúvidas</p>
                     <h2 id="faq-title">Perguntas Frequentes</h2>
                     <p>
-                        Tire suas principais dúvidas sobre atendimento, atuação e primeiros passos em casos criminais. Clique nas perguntas abaixo para ver respostas objetivas.
+                        Respostas objetivas para compreender como funciona a atuação criminal, desde a análise inicial até medidas urgentes e acompanhamento estratégico.
                     </p>
                 </div>
 
@@ -272,111 +300,111 @@
                     <article class="faq__item">
                         <h3>
                             <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
-                                <span>Quando devo procurar um advogado criminalista?</span>
+                                <span>O que acontece na primeira análise do caso?</span>
                                 <span class="faq__icon" aria-hidden="true"></span>
                             </button>
                         </h3>
                         <div class="faq__answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" hidden>
-                            <p>A orientação deve ser buscada assim que houver intimação, investigação, prisão, busca e apreensão ou qualquer risco de responsabilização penal.</p>
+                            <p>São avaliados os fatos, documentos disponíveis, fase do procedimento e riscos imediatos para indicar os primeiros caminhos jurídicos possíveis.</p>
                         </div>
                     </article>
                     <article class="faq__item">
                         <h3>
                             <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
-                                <span>O atendimento pode ser realizado fora de Belém/PA?</span>
+                                <span>Posso falar com advogado antes de prestar depoimento?</span>
                                 <span class="faq__icon" aria-hidden="true"></span>
                             </button>
                         </h3>
                         <div class="faq__answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" hidden>
-                            <p>Sim. A atuação ocorre em todo o Brasil, com atendimento presencial em Belém/PA e acompanhamento remoto conforme a necessidade do caso.</p>
+                            <p>Sim. A orientação prévia é recomendável para compreender direitos, limites do depoimento e cuidados antes de qualquer manifestação formal.</p>
                         </div>
                     </article>
                     <article class="faq__item">
                         <h3>
                             <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
-                                <span>O que fazer em caso de prisão em flagrante?</span>
+                                <span>A defesa pode começar ainda na investigação?</span>
                                 <span class="faq__icon" aria-hidden="true"></span>
                             </button>
                         </h3>
                         <div class="faq__answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" hidden>
-                            <p>Nessas situações, a atuação rápida é essencial para avaliar a legalidade da prisão, formular pedidos cabíveis e acompanhar os primeiros atos.</p>
+                            <p>Sim. A atuação na fase investigativa permite acompanhar diligências, organizar documentos, avaliar riscos e preservar elementos relevantes para a defesa.</p>
                         </div>
                     </article>
                     <article class="faq__item">
                         <h3>
                             <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
-                                <span>Como funciona a primeira consulta?</span>
+                                <span>Quando um habeas corpus pode ser avaliado?</span>
                                 <span class="faq__icon" aria-hidden="true"></span>
                             </button>
                         </h3>
                         <div class="faq__answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" hidden>
-                            <p>A conversa inicial permite compreender os fatos, avaliar documentos disponíveis e indicar caminhos jurídicos possíveis com responsabilidade e sigilo profissional.</p>
+                            <p>O habeas corpus pode ser analisado quando há prisão, ameaça concreta à liberdade ou possível constrangimento ilegal no procedimento criminal.</p>
                         </div>
                     </article>
                     <article class="faq__item">
                         <h3>
                             <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">
-                                <span>Recebi uma intimação. Preciso comparecer sozinho?</span>
+                                <span>O escritório atende situações urgentes?</span>
                                 <span class="faq__icon" aria-hidden="true"></span>
                             </button>
                         </h3>
                         <div class="faq__answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" hidden>
-                            <p>Antes de qualquer comparecimento, é recomendável buscar orientação para compreender o motivo da intimação e os cuidados necessários no depoimento.</p>
+                            <p>Casos urgentes, como prisão em flagrante, mandados, audiências e risco à liberdade, podem exigir atendimento imediato e análise prioritária.</p>
                         </div>
                     </article>
                     <article class="faq__item">
                         <h3>
                             <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">
-                                <span>Posso responder a uma investigação em liberdade?</span>
+                                <span>Como funciona a defesa em crimes empresariais?</span>
                                 <span class="faq__icon" aria-hidden="true"></span>
                             </button>
                         </h3>
                         <div class="faq__answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6" hidden>
-                            <p>Sim. Muitas apurações tramitam com o investigado em liberdade, mas o acompanhamento técnico desde o início ajuda a evitar prejuízos à defesa.</p>
+                            <p>A defesa considera documentos, dinâmica societária, responsabilidades individuais, provas técnicas e impactos do processo sobre a atividade empresarial.</p>
                         </div>
                     </article>
                     <article class="faq__item">
                         <h3>
                             <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-7" id="faq-question-7">
-                                <span>O que é habeas corpus?</span>
+                                <span>Há atendimento para processos fora do Pará?</span>
                                 <span class="faq__icon" aria-hidden="true"></span>
                             </button>
                         </h3>
                         <div class="faq__answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7" hidden>
-                            <p>É uma medida constitucional utilizada para proteger a liberdade de locomoção quando há ilegalidade, abuso ou ameaça concreta de constrangimento.</p>
+                            <p>Sim. A atuação pode ocorrer em diferentes estados, com acompanhamento remoto ou presencial conforme a necessidade processual e estratégica.</p>
                         </div>
                     </article>
                     <article class="faq__item">
                         <h3>
                             <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-8" id="faq-question-8">
-                                <span>A defesa atua em crimes empresariais?</span>
+                                <span>Quais documentos devo enviar para análise?</span>
                                 <span class="faq__icon" aria-hidden="true"></span>
                             </button>
                         </h3>
                         <div class="faq__answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8" hidden>
-                            <p>Sim. A atuação abrange Direito Penal Econômico, investigações corporativas, compliance criminal e processos relacionados à atividade empresarial.</p>
+                            <p>Intimações, decisões, boletins, denúncias, mandados, autos de prisão, documentos empresariais e qualquer registro relacionado aos fatos podem auxiliar a análise.</p>
                         </div>
                     </article>
                     <article class="faq__item">
                         <h3>
                             <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-9" id="faq-question-9">
-                                <span>Como são definidos os honorários?</span>
+                                <span>Como são tratados sigilo e confidencialidade?</span>
                                 <span class="faq__icon" aria-hidden="true"></span>
                             </button>
                         </h3>
                         <div class="faq__answer" id="faq-answer-9" role="region" aria-labelledby="faq-question-9" hidden>
-                            <p>Os honorários são definidos após a análise da complexidade, urgência, fase processual e atos necessários para a condução do caso.</p>
+                            <p>As informações compartilhadas são tratadas com reserva profissional, observando o sigilo inerente à advocacia e a sensibilidade de demandas criminais.</p>
                         </div>
                     </article>
                     <article class="faq__item">
                         <h3>
                             <button class="faq__question" type="button" aria-expanded="false" aria-controls="faq-answer-10" id="faq-question-10">
-                                <span>As informações do atendimento são sigilosas?</span>
+                                <span>A consulta garante uma solução imediata?</span>
                                 <span class="faq__icon" aria-hidden="true"></span>
                             </button>
                         </h3>
                         <div class="faq__answer" id="faq-answer-10" role="region" aria-labelledby="faq-question-10" hidden>
-                            <p>Sim. As informações compartilhadas durante o atendimento são tratadas com sigilo profissional, conforme as normas da advocacia.</p>
+                            <p>A consulta não promete resultado. Ela permite compreender o cenário jurídico, avaliar riscos e definir medidas adequadas para o caso concreto.</p>
                         </div>
                     </article>
                 </div>
@@ -391,7 +419,7 @@
                 </div>
                 <a class="button button--primary button--large" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20Renan%20Silva%20Lima." target="_blank" rel="noopener noreferrer">
                     <svg class="button__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-                        <path d="M16.03 3.5A12.35 12.35 0 0 0 5.56 22.4L4 28.5l6.25-1.5A12.34 12.34 0 1 0 16.03 3.5Zm0 2.25a10.09 10.09 0 0 1 8.58 15.38 10.1 10.1 0 0 1-13.71 3.61l-.4-.24-3.28.79.82-3.18-.26-.42A10.1 10.1 0 0 1 16.03 5.75Zm-4.35 4.72c-.22 0-.58.08-.88.41-.3.34-1.15 1.12-1.15 2.73s1.18 3.17 1.34 3.38c.16.22 2.28 3.65 5.64 4.97 2.8 1.1 3.37.88 3.98.82.61-.06 1.97-.8 2.25-1.58.28-.78.28-1.45.2-1.59-.08-.14-.3-.22-.64-.39-.33-.17-1.97-.97-2.28-1.08-.3-.11-.52-.17-.75.17-.22.33-.86 1.08-1.05 1.3-.19.22-.39.25-.72.08-.33-.17-1.4-.52-2.67-1.65-.99-.88-1.65-1.97-1.84-2.31-.19-.33-.02-.51.14-.68.14-.14.33-.39.5-.58.16-.19.22-.33.33-.55.11-.22.06-.42-.03-.58-.08-.17-.75-1.8-1.03-2.47-.27-.65-.54-.56-.75-.57h-.64Z"/>
+                        <use href="#icon-whatsapp"></use>
                     </svg>
                     Agendar Consulta
                 </a>
@@ -403,14 +431,14 @@
         <div class="container footer__grid">
             <div>
                 <a class="brand brand--footer" href="#inicio" aria-label="Renan Lima Advocacia - Início">
-                    <img class="brand__mark" src="src/assets/img/logo.webp" alt="Renan Lima - Advogado">
+                    <img class="brand__mark" src="src/assets/img/logotipo.svg?v=2" alt="Renan Lima - Advogado" width="210" height="56">
                     <span class="visually-hidden">Renan Lima - Advogado</span>
                 </a>
             </div>
 
             <address class="footer__contact">
                 <strong>Contatos</strong>
-                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20Renan%20Silva%20Lima." target="_blank" rel="noopener noreferrer">Telefone/WhatsApp: Em breve</a>
+                <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20Renan%20Silva%20Lima." target="_blank" rel="noopener noreferrer">Telefone/WhatsApp: (00) 00000-0000</a>
                 <a href="mailto:renanlima.criminal@gmail.com">E-mail: renanlima.criminal@gmail.com</a>
             </address>
         </div>
@@ -419,6 +447,6 @@
         </div>
     </footer>
 
-    <script src="src/assets/script.js"></script>
+    <script src="src/assets/script.js" defer></script>
 </body>
 </html>

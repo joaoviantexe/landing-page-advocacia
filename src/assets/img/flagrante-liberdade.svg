@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Flagrante e Liberdade">
+  <circle cx="28" cy="43" r="12" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="52" cy="43" r="12" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <path d="M40 43h0" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="square"/>
+  <path d="M18 31l-8-8M62 31l8-8" fill="none" stroke="#F05400" stroke-width="3" stroke-linecap="square"/>
+  <path d="M23 57l-8 12M57 57l8 12" fill="none" stroke="#F05400" stroke-width="3" stroke-linecap="square"/>
+</svg>
