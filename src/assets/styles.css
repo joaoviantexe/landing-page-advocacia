@@ -1063,6 +1063,7 @@ h3 {
     .presentation {
         padding-top: 36px;
         padding-bottom: 36px;
+        overflow: visible;
     }
 
     h1 {
@@ -1108,7 +1109,7 @@ h3 {
 
     .presentation__media,
     .presentation__media img {
-        height: clamp(190px, 30svh, 260px);
+        height: clamp(360px, 92vw, 520px);
         min-height: 0;
     }
 
@@ -1225,7 +1226,7 @@ h3 {
 
     .presentation__media,
     .presentation__media img {
-        height: clamp(170px, 28svh, 220px);
+        height: 420px;
         min-height: 0;
     }
 
