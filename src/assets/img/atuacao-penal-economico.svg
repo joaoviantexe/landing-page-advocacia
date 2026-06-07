@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="Direito Penal Econômico">
-  <rect x="15" y="24" width="50" height="40" rx="2" fill="none" stroke="#ffffff" stroke-width="3"/>
-  <path d="M30 24v-6h20v6" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square"/>
-  <path d="M15 38h50" fill="none" stroke="#F05400" stroke-width="3"/>
-  <path d="M40 34v26" fill="none" stroke="#F05400" stroke-width="3"/>
-  <path d="M33 48c0 4 3 7 7 7s7-3 7-7-3-7-7-7-7-3-7-7 3-7 7-7 7 3 7 7" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="square"/>
-</svg>
