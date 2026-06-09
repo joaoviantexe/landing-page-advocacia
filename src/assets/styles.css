@@ -1167,6 +1167,22 @@ h3 {
         justify-content: center;
         justify-items: center;
     }
+
+    .article-card--empty {
+        display: none;
+    }
+
+    .practice-card__media img,
+    .service-card__media img,
+    .article-card__image,
+    .presentation__media img {
+        object-position: center center;
+    }
+
+    .hero__photo img {
+        object-position: center top;
+    }
+
     .practice {
         height: auto;
         max-height: none;
@@ -1234,7 +1250,7 @@ h3 {
     .practice-card__content,
     .service-card__content,
     .review-card,
-    .article-card {
+    .article-card__content {
         padding: 24px 20px;
     }
 
